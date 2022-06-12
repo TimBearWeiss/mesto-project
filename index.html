@@ -10,7 +10,6 @@
   <body class="page">
     <header class="header">
       <img class="header__logo" src="./images/Vector.svg" alt="Лого" />
-      <hr class="header__line" />
     </header>
 
     <main>
@@ -18,7 +17,7 @@
         <img class="profile__avatar" src="./images/image.png" alt="Аватар" />
 
         <div class="profile__info">
-          <p class="profile__name">Жак-Ив Кусто</p>
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
 
           <button class="profile__edit-button"></button>
           <p class="profile__profession">Исследователь океана</p>
@@ -31,11 +30,11 @@
           <img
             class="element__image"
             src="./images/kirill-pershin-1088404-unsplash.jpg"
-            alt="фотография"
+            alt="фотография карточки"
           />
           <div class="element__panel">
-            <p class="element__inscription">Карачаевск</p>
-            <img class="elements__like" src="./images/like.svg" alt="лайк" />
+            <h2 class="element__inscription">Карачаевск</h2>
+            <button class="elements__like"></button>
           </div>
         </div>
 
@@ -46,8 +45,8 @@
             alt="фотография"
           />
           <div class="element__panel">
-            <p class="element__inscription">Гора Эльбрус</p>
-            <img class="elements__like" src="./images/like.svg" alt="лайк" />
+            <h2 class="element__inscription">Гора Эльбрус</h2>
+            <button class="elements__like"></button>
           </div>
         </div>
 
@@ -58,8 +57,8 @@
             alt="фотография"
           />
           <div class="element__panel">
-            <p class="element__inscription">Домбай</p>
-            <img class="elements__like" src="./images/like.svg" alt="лайк" />
+            <h2 class="element__inscription">Домбай</h2>
+            <button class="elements__like"></button>
           </div>
         </div>
 
@@ -70,8 +69,8 @@
             alt="фотография"
           />
           <div class="element__panel">
-            <p class="element__inscription">Гора Эльбрус</p>
-            <img class="elements__like" src="./images/like.svg" alt="лайк" />
+            <h2 class="element__inscription">Гора Эльбрус</h2>
+            <button class="elements__like"></button>
           </div>
         </div>
 
@@ -82,8 +81,8 @@
             alt="фотография"
           />
           <div class="element__panel">
-            <p class="element__inscription">Домбай</p>
-            <img class="elements__like" src="./images/like.svg" alt="лайк" />
+            <h2 class="element__inscription">Домбай</h2>
+            <button class="elements__like"></button>
           </div>
         </div>
 
@@ -94,8 +93,8 @@
             alt="фотография"
           />
           <div class="element__panel">
-            <p class="element__inscription">Карачаево-Ч...</p>
-            <img class="elements__like" src="./images/like.svg" alt="лайк" />
+            <h2 class="element__inscription">Карачаево-Ч...</h2>
+            <button class="elements__like"></button>
           </div>
         </div>
       </section>
@@ -105,7 +104,7 @@
       <p class="footer__autor">© 2020 Mesto Russia</p>
     </footer>
 
-    <section class="popup popup_opened">
+    <article class="popup popup_opened">
       <div class="popup__container">
         <form class="popup__form">
           <button class="popup__close-button"></button>
@@ -122,11 +121,9 @@
             name="profession"
             value="Исследователь океана"
           />
-          <button class="popup__save" type="submit">
-            <span class="popup__color-save">Сохранить</span>
-          </button>
+          <button class="popup__save" type="submit">Сохранить</button>
         </form>
       </div>
-    </section>
+    </article>
   </body>
 </html>
