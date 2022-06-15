@@ -2,7 +2,7 @@
   position: absolute;
   top: -40px;
   right: -40px;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0);
   background-image: url(../../../images/Close\ Icon.svg);
   z-index: 3;
   width: 32px;

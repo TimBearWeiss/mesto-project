@@ -2,8 +2,7 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr min-content;
-  margin-top: 36.25px;
-  margin-bottom: 47.25px;
+  max-width: 336px;
 }
 
 @media screen and (max-width: 767px) {
@@ -12,5 +11,6 @@
     margin-right: auto;
     margin-top: 22.25px;
     margin-bottom: 0px;
+    max-width: 282px;
   }
 }
