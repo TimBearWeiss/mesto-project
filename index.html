@@ -25,105 +25,82 @@
         <button class="profile__add-button"></button>
       </section>
 
-      <section class="elements">
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kirill-pershin-1088404-unsplash.jpg"
-            alt="церковь в горах Карачаевска"
-          />
-          <div class="element__panel">
-            <h2 class="element__inscription">Карачаевск</h2>
-            <button class="elements__like"></button>
-          </div>
-        </div>
-
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kirill-pershin-1404681-unsplash.png"
-            alt="Закат на горе Эльбрус"
-          />
-          <div class="element__panel">
-            <h2 class="element__inscription">Гора Эльбрус</h2>
-            <button class="elements__like"></button>
-          </div>
-        </div>
-
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kirill-pershin-1556355-unsplash.png"
-            alt="Пейзаж Домбая"
-          />
-          <div class="element__panel">
-            <h2 class="element__inscription">Домбай</h2>
-            <button class="elements__like"></button>
-          </div>
-        </div>
-
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kirill-pershin-1404681-unsplash.png"
-            alt="Закат на горе Эльбрус"
-          />
-          <div class="element__panel">
-            <h2 class="element__inscription">Гора Эльбрус</h2>
-            <button class="elements__like"></button>
-          </div>
-        </div>
-
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kirill-pershin-1556355-unsplash.png"
-            alt="Пейзаж Домбая"
-          />
-          <div class="element__panel">
-            <h2 class="element__inscription">Домбай</h2>
-            <button class="elements__like"></button>
-          </div>
-        </div>
-
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kirill-pershin-1088404-unsplash.jpg"
-            alt="церковь в горах Карачаевска"
-          />
-          <div class="element__panel">
-            <h2 class="element__inscription">Карачаево-Ч...</h2>
-            <button class="elements__like"></button>
-          </div>
-        </div>
-      </section>
+      <section class="elements"></section>
     </main>
 
     <footer class="footer">
       <p class="footer__autor">© 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup popup_opened">
+    <div class="popup" id="popupProfile">
       <div class="popup__container">
+        <button class="popup__close-button" type="button"></button>
         <form class="popup__form">
-          <button class="popup__close-button"></button>
           <h2 class="popup__title">Редактировать профиль</h2>
           <input
             class="popup__input"
             type="text"
             name="firstname"
-            value="Жак-Ив Кусто"
+            value=""
+            id="nameId"
           />
           <input
             class="popup__input"
             type="text"
             name="profession"
-            value="Исследователь океана"
+            value=""
+            id="professionId"
           />
           <button class="popup__save" type="submit">Сохранить</button>
         </form>
       </div>
     </div>
+
+    <div class="popup" id="popupAddCard">
+      <div class="popup__container">
+        <button class="popup__close-button" type="button"></button>
+        <form class="popup__form">
+          <h2 class="popup__title">Новое место</h2>
+          <input
+            class="popup__input"
+            type="text"
+            name="name"
+            value=""
+            placeholder="Название"
+            id="NewPlace"
+          />
+          <input
+            class="popup__input"
+            type="text"
+            name="link"
+            value=""
+            placeholder="Ссылка на картинку"
+            id="linkPlace"
+          />
+          <button class="popup__save" type="submit">Создать</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup__image">
+      <figure class="popup__figure">
+        <button class="popup__close-button" type="button"></button>
+        <img class="popup__picture" src="#" alt="полномасштабная картинка" />
+        <figcaption class="popup__caption"></figcaption>
+      </figure>
+    </div>
+
+    <template id="cardTemplate">
+      <div class="element">
+        <button class="element__delete-btn" type="button"></button>
+        <img class="element__image" src="#" alt="фото карточки" />
+        <div class="element__panel">
+          <h2 class="element__inscription"></h2>
+          <button class="elements__like"></button>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
   </body>
 </html>
